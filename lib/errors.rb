@@ -3,6 +3,7 @@
 module Weather
   class Error < StandardError; end
 
+  class InvalidArgumentsError < Error; end
   class InvalidDateError < Error; end
   class InvalidCoordinatesError < Error; end
   class ForecastDateOutOfRangeError < Error; end

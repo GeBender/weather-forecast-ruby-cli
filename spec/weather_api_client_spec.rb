@@ -71,8 +71,8 @@ RSpec.describe Weather::WeatherApiClient do
         "timezone" => "auto",
         "forecast_days" => "16"
       )
-      expect(http_client.open_timeout).to eq(5)
-      expect(http_client.read_timeout).to eq(5)
+      expect(http_client.open_timeout).to eq(15)
+      expect(http_client.read_timeout).to eq(15)
     end
 
     it "raises an error when API returns a non-success status" do

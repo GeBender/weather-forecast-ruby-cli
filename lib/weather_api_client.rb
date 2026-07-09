@@ -8,7 +8,7 @@ require_relative "net_http_client"
 module Weather
   class WeatherApiClient
     BASE_URL = "https://api.open-meteo.com/v1/forecast"
-    DEFAULT_TIMEOUT = 5
+    DEFAULT_TIMEOUT = 15
 
     def initialize(http_client: NetHttpClient.new)
       @http_client = http_client
